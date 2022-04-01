@@ -57,3 +57,28 @@ void slipGaji::proses(){
 		}
 	}
 }
+void slipGaji::prosesstruk(){
+ if (posisi == 1){
+ 	a="Leader TIM";
+ }	
+ else{
+ 	a="Anggota";
+ }
+ }
+
+void slipGaji::output(){
+	cout<<"\n\n================================"<<endl;
+	cout<<"\nGajimu : "<<gaji<<" Juta/bulan"<<endl;
+	cout<<"Posisi Developer = "<<a;
+	
+}
+int main(){
+	slipGaji x;
+	x.input();
+	x.gajian();
+	x.proses();
+	x.prosesstruk();
+	x.output();
+	
+	return 0;
+}
