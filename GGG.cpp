@@ -28,4 +28,32 @@ void slipGaji::input(){
 		
 	
 }
-
+	
+}
+void slipGaji::gajian(){
+	switch (jenis) {
+		case 1:	gaji=15;break;
+		case 2:	gaji=13;break;
+		case 3:	gaji=8 ; break;
+		case 4:	gaji=18; break;
+		case 5:	gaji=8 ;break;
+		case 6:	gaji=15;
+}
+}
+void slipGaji::proses(){
+	if (kerja > 4){
+		bonus= gaji*0.04;
+		gaji=gaji+bonus;
+		if (posisi == 1){
+			bonus2= gaji*0.06;
+			gaji= gaji+bonus+bonus2;
+		}
+	}
+	else{
+	gaji=gaji;	
+	if (posisi == 1){
+			bonus2= gaji*0.06;
+			gaji= gaji+bonus2;
+		}
+	}
+}
